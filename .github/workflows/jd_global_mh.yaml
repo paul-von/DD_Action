@@ -1,14 +1,14 @@
 
 
-name: jd_nian_wechat 京东炸年兽小程序
+name: jd_global_mh 京东国际盲盒
 on:
   workflow_dispatch:
   schedule:
-      - cron: "50 0 * * *"
+      - cron: "0 23,3,10 * * *"
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_nian_wechat
+      types: jd_global_mh
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,10 +25,10 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-      - name: '运行 【京东炸年兽小程序】'
+      - name: '运行 【京东国际盲盒】'
         run: |
           cd ~/scripts
-          node jd_nian_wechat.js
+          node jd_global_mh.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
