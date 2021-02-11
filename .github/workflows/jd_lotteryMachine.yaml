@@ -5,7 +5,7 @@ name: jd_lotteryMachine 京东抽奖机
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 16 * * *"
+    - cron: "0 17 * * *"
   watch:
     types: [started]
   repository_dispatch:
