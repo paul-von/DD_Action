@@ -1,16 +1,19 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
+name: jd_ttwk 天天挖矿
 
-name: jd_necklace 点点券
 on:
   workflow_dispatch:
   schedule:
-      - cron: "10 17,12 * * *"
+    - cron: '10 1 * * *'
   watch:
-      types: [started]
+    types: started
   repository_dispatch:
-      types: necklace
+    types: jd_ttwk
 jobs:
   build:
+
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
@@ -25,10 +28,10 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-      - name: '运行 【点点券】'
+      - name: '运行 【天天挖矿】'
         run: |
           cd ~/scripts
-          node jd_necklace.js
+          node jd_ttwk.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
