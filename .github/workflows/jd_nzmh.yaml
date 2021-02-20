@@ -1,14 +1,14 @@
 
 
-name: jd_xg 小鸽有礼
+name: jd_nzmh 女装盲盒抽京豆
 on:
   workflow_dispatch:
   schedule:
-      - cron: "5 23 * * *"
+      - cron: "0 7 19-25 2 *"
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_xg
+      types: jd_nzmh
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,10 +25,10 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-      - name: '运行 【小鸽有礼】'
+      - name: '运行 【女装盲盒抽京豆】'
         run: |
           cd ~/scripts
-          node jd_xg.js
+          node jd_nzmh.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}

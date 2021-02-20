@@ -1,14 +1,14 @@
 
 
-name: jd_global_mh 京东国际盲盒
+name: jd_beauty 美丽研究院
 on:
   workflow_dispatch:
   schedule:
-      - cron: "0 1,4,12,13 * * *"
+      - cron: "0 23,4,11 * * *"
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_global_mh
+      types: jd_beauty
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,10 +25,10 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-      - name: '运行 【京东国际盲盒】'
+      - name: '运行 【美丽研究院】'
         run: |
           cd ~/scripts
-          node jd_global_mh.js
+          node jd_beauty.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
