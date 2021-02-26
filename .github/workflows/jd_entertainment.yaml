@@ -1,14 +1,14 @@
 
 
-name: jd_speed_sign 京东极速版签到+赚现金任务
+name: jd_entertainment 百变大咖秀
 on:
   workflow_dispatch:
   schedule:
-      - cron: "0 17 * * *"
+      - cron: "0 2,3 * * *"
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_speed_sign
+      types: jd_entertainment
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,10 +25,10 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-      - name: '运行 【京东极速版签到+赚现金任务】'
+      - name: '运行 【百变大咖秀】'
         run: |
           cd ~/scripts
-          node jd_speed_sign.js
+          node jd_entertainment.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
