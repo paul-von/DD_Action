@@ -25,7 +25,7 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-      - name: '运行 【小鸽有礼2】'
+      - name: '运行 【京东极速版红包】'
         run: |
           cd ~/scripts
           node jd_speed_redpocke.js
