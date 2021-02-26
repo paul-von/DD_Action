@@ -1,14 +1,14 @@
 
 
-name: jx_cfd 京喜财富岛
+name: jx_cfdtx 京喜财富岛提现
 on:
   workflow_dispatch:
   schedule:
-      - cron: '40 * * * *'
+      - cron: "5 13 * * *"
   watch:
       types: [started]
   repository_dispatch:
-      types: jx_cfd
+      types: jx_cfdtx
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,10 +25,10 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-      - name: '运行 【京喜财富岛】'
+      - name: '运行 【京喜财富岛提现】'
         run: |
           cd ~/scripts
-          node jx_cfd.js
+          node jx_cfdtx.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
