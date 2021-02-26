@@ -5,7 +5,7 @@ name: test
 
 on:
   workflow_dispatch:
-  
+
   watch:
     types: started
   repository_dispatch:

@@ -4,7 +4,7 @@ name: jd_speed_sign 京东极速版签到+赚现金任务
 on:
   workflow_dispatch:
   schedule:
-      - cron: "0 17 * * *"
+      - cron: "10 16 * * *"
   watch:
       types: [started]
   repository_dispatch:
