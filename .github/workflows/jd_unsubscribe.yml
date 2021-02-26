@@ -5,7 +5,7 @@ name: jd_unsubscribe 京东取关商品
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */3 * * *'
   watch:
         types: started
   repository_dispatch:
