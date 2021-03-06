@@ -3,8 +3,8 @@
 name: jx_cfdtx 京喜财富岛提现
 on:
   workflow_dispatch:
-  schedule:
-      - cron: "5 13 * * *"
+#  schedule:
+#      - cron: "5 13 * * *"
   watch:
       types: [started]
   repository_dispatch:

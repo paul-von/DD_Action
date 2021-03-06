@@ -3,6 +3,8 @@
 name: jx_cfd 京喜财富岛
 on:
   workflow_dispatch:
+  schedule:
+      - cron: "5 16,0,5,11 * * *"
   watch:
       types: [started]
   repository_dispatch:
