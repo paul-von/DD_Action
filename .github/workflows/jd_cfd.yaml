@@ -1,12 +1,14 @@
 
 
-name: jx_cfd 京喜财富岛
+name: jd_cfd 京喜财富岛
 on:
   workflow_dispatch:
+  schedule:
+      - cron: "5 16,0,5,11 * * *"
   watch:
       types: [started]
   repository_dispatch:
-      types: jx_cfd
+      types: jd_cfd
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,7 +28,7 @@ jobs:
       - name: '运行 【京喜财富岛】'
         run: |
           cd ~/scripts
-          node jx_cfd.js
+          node jd_cfd.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
