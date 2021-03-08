@@ -1,6 +1,6 @@
 
 
-name: jd_jxnc 京喜农场
+name: jx_nc 京喜农场
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_jxnc
+      types: jx_nc
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
       - name: '运行 【京喜农场】'
         run: |
           cd ~/scripts
-          node jd_jxnc.js
+          node jx_nc.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
