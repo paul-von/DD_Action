@@ -26,12 +26,12 @@ jobs:
           cd ~/scripts
           npm install
 
-      - name: '运行zZ 【京东极速版签到+赚现金任务】'
+      - name: '运行WZ 【京东极速版签到+赚现金任务】'
         run: |
           cd ~/scripts
           node jd_speed_sign.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}
           JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
           JD_USER_AGENT: ${{ github.event.client_payload.JD_USER_AGENT || secrets.JD_USER_AGENT }}
           PUSH_KEY: ${{ github.event.client_payload.PUSH_KEY || secrets.PUSH_KEY }}
@@ -49,12 +49,12 @@ jobs:
           PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
           PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
 
-      - name: '运行MA 【京东极速版签到+赚现金任务】'
+      - name: '运行WM 【京东极速版签到+赚现金任务】'
         run: |
           cd ~/scripts
           node jd_speed_sign.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_MA }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_WM }}
           JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
           JD_USER_AGENT: ${{ github.event.client_payload.JD_USER_AGENT || secrets.JD_USER_AGENT }}
           PUSH_KEY: ${{ github.event.client_payload.PUSH_KEY || secrets.PUSH_KEY }}
@@ -72,12 +72,12 @@ jobs:
           PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
           PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
 
-      - name: '运行BA 【京东极速版签到+赚现金任务】'
+      - name: '运行TT 【京东极速版签到+赚现金任务】'
         run: |
           cd ~/scripts
           node jd_speed_sign.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_BA }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_TT }}
           JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
           JD_USER_AGENT: ${{ github.event.client_payload.JD_USER_AGENT || secrets.JD_USER_AGENT }}
           PUSH_KEY: ${{ github.event.client_payload.PUSH_KEY || secrets.PUSH_KEY }}
@@ -95,12 +95,12 @@ jobs:
           PUSH_PLUS_TOKEN: ${{ github.event.client_payload.PUSH_PLUS_TOKEN || secrets.PUSH_PLUS_TOKEN }}
           PUSH_PLUS_USER: ${{ github.event.client_payload.PUSH_PLUS_USER || secrets.PUSH_PLUS_USER }}
 
-      - name: '运行D 【京东极速版签到+赚现金任务】'
+      - name: '运行FF 【京东极速版签到+赚现金任务】'
         run: |
           cd ~/scripts
           node jd_speed_sign.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
           JD_USER_AGENT: ${{ github.event.client_payload.JD_USER_AGENT || secrets.JD_USER_AGENT }}
           PUSH_KEY: ${{ github.event.client_payload.PUSH_KEY || secrets.PUSH_KEY }}
