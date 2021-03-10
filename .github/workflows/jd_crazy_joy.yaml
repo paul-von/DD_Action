@@ -25,15 +25,11 @@ jobs:
         run: |
           cd ~/scripts
           npm install
+
       - name: '运行 【疯狂Joy任务】'
         run: |
           cd ~/scripts
           node jd_crazy_joy.js
-
-      - name: '运行ZL 【京豆变动通知】'
-        run: |
-          cd ~/scripts
-          node jd_bean_change.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}&${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}&${{ secrets.JD_COOKIE_DD }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_ZZ }}
           JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
