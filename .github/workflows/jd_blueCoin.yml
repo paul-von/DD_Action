@@ -5,7 +5,7 @@ name: blueCoin 京小超领蓝币
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '10 16 * * *'
   watch:
     types: started
   repository_dispatch:

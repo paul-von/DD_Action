@@ -3,8 +3,8 @@
 name: priceProtect 京东价格保护
 on:
   workflow_dispatch:
-  schedule:
-      - cron: "0 10 */3 * *"
+#  schedule:
+#      - cron: "0 10 */3 * *"
   watch:
       types: [started]
   repository_dispatch:
