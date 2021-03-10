@@ -1,5 +1,5 @@
 
-name: jd_xmf 京东小魔方
+name: xmf 京东小魔方
 on:
   workflow_dispatch:
 #  schedule:
@@ -7,7 +7,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_xmf
+      types: xmf
 jobs:
   build:
     runs-on: ubuntu-latest

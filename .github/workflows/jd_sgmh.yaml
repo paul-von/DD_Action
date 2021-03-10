@@ -1,5 +1,5 @@
 
-name: jd_sgmh 闪购盲盒
+name: sgmh 闪购盲盒
 on:
   workflow_dispatch:
   schedule:
@@ -7,7 +7,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_sgmh
+      types: sgmh
 jobs:
   build:
     runs-on: ubuntu-latest

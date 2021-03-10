@@ -1,6 +1,6 @@
 
 
-name: jd_crazy_joy 疯狂Joy任务
+name: crazy_joy 疯狂Joy任务
 on:
   workflow_dispatch:
   schedule:

@@ -1,6 +1,6 @@
 
 
-name: jd_speed_redpocke 京东极速版红包
+name: speed_redpocke 京东极速版红包
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_speed_redpocke
+      types: speed_redpocke
 jobs:
   build:
     runs-on: ubuntu-latest

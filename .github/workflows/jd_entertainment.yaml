@@ -1,6 +1,6 @@
 
 
-name: jd_entertainment 百变大咖秀
+name: entertainment 百变大咖秀
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_entertainment
+      types: entertainment
 jobs:
   build:
     runs-on: ubuntu-latest

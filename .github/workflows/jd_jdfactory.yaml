@@ -1,6 +1,6 @@
 
 
-name: jd_jdfactory 东东工厂
+name: jdfactory 东东工厂
 on:
   workflow_dispatch:
   schedule:

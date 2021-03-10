@@ -1,6 +1,6 @@
 
 
-name: jd_kd 京东快递签到
+name: kd 京东快递签到
 on:
   workflow_dispatch:
   schedule:

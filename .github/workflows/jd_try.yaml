@@ -1,6 +1,6 @@
 
 
-name: jd_try 京东试用
+name: try 京东试用
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_try
+      types: try
 jobs:
   build:
     runs-on: ubuntu-latest

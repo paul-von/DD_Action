@@ -1,6 +1,6 @@
 
 
-name: jd_daydlt 天天优惠大乐透
+name: daydlt 天天优惠大乐透
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_daydlt
+      types: daydlt
 jobs:
   build:
     runs-on: ubuntu-latest

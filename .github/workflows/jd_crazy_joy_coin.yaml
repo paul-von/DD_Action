@@ -1,6 +1,6 @@
 
 
-name: jd_crazy_joy_coin 疯狂Joy挂机领金币
+name: crazy_joy_coin 疯狂Joy挂机领金币
 on:
   workflow_dispatch:
   schedule:

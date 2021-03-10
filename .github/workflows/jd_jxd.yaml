@@ -1,5 +1,5 @@
 
-name: jd_jxd 京小兑
+name: jxd 京小兑
 on:
   workflow_dispatch:
   schedule:
@@ -7,7 +7,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_jxd
+      types: jxd
 jobs:
   build:
     runs-on: ubuntu-latest

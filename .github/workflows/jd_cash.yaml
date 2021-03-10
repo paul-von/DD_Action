@@ -1,6 +1,6 @@
 
 
-name: jd_cash 签到领现金
+name: cash 签到领现金
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_cash
+      types: cash
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -1,6 +1,6 @@
 
 
-name: jd_nzmh 女装盲盒抽京豆
+name: nzmh 女装盲盒抽京豆
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_nzmh
+      types: nzmh
 jobs:
   build:
     runs-on: ubuntu-latest

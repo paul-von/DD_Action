@@ -1,6 +1,6 @@
 
 
-name: jd_jdzz 京东赚赚小程序
+name: jdzz 京东赚赚小程序
 on:
   workflow_dispatch:
   schedule:

@@ -1,6 +1,6 @@
 
 
-name: jd_bean_home 领京豆额外奖励
+name: bean_home 领京豆额外奖励
 on:
   workflow_dispatch:
   schedule:

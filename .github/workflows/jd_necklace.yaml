@@ -1,6 +1,6 @@
 
 
-name: jd_necklace 点点券
+name: necklace 点点券
 on:
   workflow_dispatch:
   schedule:

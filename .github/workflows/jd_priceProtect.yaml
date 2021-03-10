@@ -1,6 +1,6 @@
 
 
-name: jd_priceProtect 京东价格保护
+name: priceProtect 京东价格保护
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_priceProtect
+      types: priceProtect
 jobs:
   build:
     runs-on: ubuntu-latest
