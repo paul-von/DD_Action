@@ -1,14 +1,14 @@
 
 
-name: jd_shake 超级摇一摇
+name: jd_global_mh 京东国际盲盒
 on:
-#  workflow_dispatch:
-#  schedule:
-#      - cron: "10 1,5,17 * * *"
+  workflow_dispatch:
+  schedule:
+      - cron: "0 9,12,20,21 * 3 *"
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_shake
+      types: jd_global_mh
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,10 +26,10 @@ jobs:
           cd ~/scripts
           npm install
 
-      - name: '运行zZ 【超级摇一摇】'
+      - name: '运行zZ 【京东国际盲盒】'
         run: |
           cd ~/scripts
-          node jd_shake.js
+          node jd_global_mh.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -42,10 +42,10 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
 
-      - name: '运行wz 【超级摇一摇】'
+      - name: "运行wz【京东国际盲盒】"
         run: |
           cd ~/scripts
-          node jd_shake.js
+          node jd_global_mh.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -58,12 +58,10 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
 
-
-
-      - name: '运行zl 【超级摇一摇】'
+      - name: "运行zl【京东国际盲盒】"
         run: |
           cd ~/scripts
-          node jd_shake.js
+          node jd_global_mh.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
