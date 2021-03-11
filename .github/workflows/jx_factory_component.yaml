@@ -1,13 +1,13 @@
 
-name: jx_factory 京喜工厂
+name: factory_component 京喜工厂
 on:
   workflow_dispatch:
-#  schedule:
-#    - cron: "*/18 * * * *"
+  schedule:
+    - cron: "*/18 * * * *"
   watch:
     types: [started]
   repository_dispatch:
-    types: factory
+    types: factory_component
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
       - name: "运行【京喜工厂】"
         run: |
           cd ~/scripts
-          node jx_factory.js
+          node jx_factory_component.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
