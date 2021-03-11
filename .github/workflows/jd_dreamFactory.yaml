@@ -1,5 +1,5 @@
 
-name: jx_dreamFactory 京喜工厂
+name: jd_dreamFactory 京喜工厂
 on:
   workflow_dispatch:
   schedule:
@@ -28,7 +28,7 @@ jobs:
       - name: "运行zZ【京喜工厂】"
         run: |
           cd ~/scripts
-          node jx_dreamFactory.js
+          node jd_dreamFactory.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -44,7 +44,7 @@ jobs:
       - name: "运行wz【京喜工厂】"
         run: |
           cd ~/scripts
-          node jx_dreamFactory.js
+          node jd_dreamFactory.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -60,7 +60,7 @@ jobs:
       - name: "运行zl【京喜工厂】"
         run: |
           cd ~/scripts
-          node jx_dreamFactory.js
+          node jd_dreamFactory.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
