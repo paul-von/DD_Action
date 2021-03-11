@@ -1,20 +1,18 @@
 
 
-name: sgmh 闪购盲盒
+name: jd_shake 超级摇一摇
 on:
   workflow_dispatch:
-    schedule:
-      - cron: "20 1 * * *"
+  schedule:
+      - cron: "10 1,5,17 * * *"
   watch:
       types: [started]
   repository_dispatch:
-      types: sgmh
+      types: jd_shake
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    env:
-      ck_1: true
     steps:
       - name: Checkout
         run: |
@@ -27,11 +25,11 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-          
-      - name: '运行zZ 【闪购盲盒】'
+
+      - name: '运行zZ 【超级摇一摇】'
         run: |
           cd ~/scripts
-          node jd_sgmh.js
+          node jd_shake.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -44,10 +42,10 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
 
-      - name: '运行wz 【闪购盲盒】'
+      - name: '运行wz 【超级摇一摇】'
         run: |
           cd ~/scripts
-          node jd_sgmh.js
+          node jd_shake.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -60,10 +58,12 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
 
-      - name: '运行zl 【闪购盲盒】'
+
+
+      - name: '运行zl 【超级摇一摇】'
         run: |
           cd ~/scripts
-          node jd_sgmh.js
+          node jd_shake.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
