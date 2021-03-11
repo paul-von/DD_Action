@@ -5,7 +5,7 @@ name: bean_sign 京豆签到脚本
 on:
   workflow_dispatch:
   schedule:
-    - cron: '6 17,23 * * *'
+    - cron: '10 */12 * * *'
   watch:
     types: started
   repository_dispatch:

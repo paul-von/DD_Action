@@ -4,7 +4,7 @@ name: ms 京东秒秒币
 on:
   workflow_dispatch:
   schedule:
-      - cron: "10 23 * * *"
+      - cron: "50 */11 * * *"
   watch:
       types: [started]
   repository_dispatch:

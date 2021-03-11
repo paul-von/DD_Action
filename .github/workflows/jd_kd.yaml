@@ -4,7 +4,7 @@ name: kd 京东快递签到
 on:
   workflow_dispatch:
   schedule:
-      - cron: "0 17 * * *"
+      - cron: "45 */12 * * *"
   watch:
       types: [started]
   repository_dispatch:

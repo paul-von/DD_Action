@@ -4,7 +4,7 @@ name: crazy_joy 疯狂Joy任务
 on:
   workflow_dispatch:
   schedule:
-      - cron: "8 0-23/12 * * *"
+      - cron: "35 */12 * * *"
   watch:
       types: [started]
   repository_dispatch:
