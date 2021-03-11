@@ -1,9 +1,10 @@
 
-name: sgmh 闪购盲盒
+
+name: sgmh 超级摇一摇
 on:
   workflow_dispatch:
-  schedule:
-      - cron: "20 1 * * *"
+    schedule:
+      - cron: "10 1,5,17 * * *"
   watch:
       types: [started]
   repository_dispatch:
@@ -12,6 +13,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
+    env:
+      ck_1: true
     steps:
       - name: Checkout
         run: |
@@ -25,44 +28,13 @@ jobs:
           cd ~/scripts
           npm install
 
-      - name: '运行zZ 【闪购盲盒】'
+      - name: '运行 【超级摇一摇】'
+        if: env.ck_1 == 'true'
         run: |
           cd ~/scripts
           node jd_sgmh.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
-          JD_DEBUG: ${{ secrets.JD_DEBUG }}
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          BARK_SOUND: ${{ secrets.BARK_SOUND }}
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-
-      - name: "运行wz【闪购盲盒】"
-        run: |
-          cd ~/scripts
-          node jd_sgmh.js
-        env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
-          JD_DEBUG: ${{ secrets.JD_DEBUG }}
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          BARK_SOUND: ${{ secrets.BARK_SOUND }}
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-
-      - name: "运行zl【闪购盲盒】"
-        run: |
-          cd ~/scripts
-          node jd_sgmh.js
-        env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
