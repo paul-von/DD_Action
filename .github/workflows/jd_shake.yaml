@@ -2,9 +2,9 @@
 
 name: jd_shake 超级摇一摇
 on:
-#  workflow_dispatch:
-#  schedule:
-#      - cron: "10 1,5,17 * * *"
+  workflow_dispatch:
+  schedule:
+      - cron: "10 1,5,17 * * *"
   watch:
       types: [started]
   repository_dispatch:
