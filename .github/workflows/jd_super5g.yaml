@@ -1,14 +1,14 @@
 
 
-name: jd_xtg 手机尚学季
+name: jd_super5g 5G超级盲盒
 on:
   workflow_dispatch:
   schedule:
-      - cron: "0 0 15-19 3 *"
+      - cron: "0 16-23,0-15/3 * * *"
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_xtg
+      types: jd_super5g
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,10 +26,10 @@ jobs:
           cd ~/scripts
           npm install
 
-      - name: '运行zZ 【手机尚学季】'
+      - name: '运行zZ 【5G超级盲盒】'
         run: |
           cd ~/scripts
-          node jd_xtg.js
+          node jd_super5g.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -42,7 +42,7 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
 
-      - name: "运行wz【手机尚学季】"
+      - name: "运行wz【5G超级盲盒】"
         run: |
           cd ~/scripts
           node jx_nc.js
@@ -58,7 +58,7 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
 
-      - name: "运行zl【手机尚学季】"
+      - name: "运行zl【5G超级盲盒】"
         run: |
           cd ~/scripts
           node jx_nc.js
