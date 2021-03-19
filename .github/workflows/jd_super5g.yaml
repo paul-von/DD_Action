@@ -45,7 +45,7 @@ jobs:
       - name: "运行wz【5G超级盲盒】"
         run: |
           cd ~/scripts
-          node jx_nc.js
+          node jd_super5g.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -61,7 +61,7 @@ jobs:
       - name: "运行zl【5G超级盲盒】"
         run: |
           cd ~/scripts
-          node jx_nc.js
+          node jd_super5g.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
