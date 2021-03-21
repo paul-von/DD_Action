@@ -25,13 +25,13 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-
-      - name: '运行zZ 【城城领现金】'
+          
+      - name: '运行ZZ 【城城领现金】'
         run: |
           cd ~/scripts
           node jd_city.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}
           CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
@@ -42,13 +42,14 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
 
-      - name: '运行wz 【城城领现金】'
+      - name: '运行BA 【城城领现金】'
         run: |
           cd ~/scripts
           node jd_city.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_BA }}
           CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
@@ -59,15 +60,14 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
 
-
-
-      - name: '运行zl 【城城领现金】'
+      - name: '运行MA 【城城领现金】'
         run: |
           cd ~/scripts
           node jd_city.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_MA }}
           CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
@@ -78,3 +78,150 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+
+      - name: '运行DD 【城城领现金】'
+        run: |
+          cd ~/scripts
+          node jd_city.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+
+      - name: '运行ZL 【城城领现金】'
+        run: |
+          cd ~/scripts
+          node jd_city.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+          
+      - name: '运行ZQ 【城城领现金】'
+        run: |
+          cd ~/scripts
+          node jd_city.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_ZQ }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+
+      - name: '运行AiE 【城城领现金】'
+        run: |
+          cd ~/scripts
+          node jd_city.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_AiE }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+
+
+      - name: '运行WZ 【城城领现金】'
+        run: |
+          cd ~/scripts
+          node jd_city.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+
+      - name: '运行WM 【城城领现金】'
+        run: |
+          cd ~/scripts
+          node jd_city.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_WM }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+
+      - name: '运行TT 【城城领现金】'
+        run: |
+          cd ~/scripts
+          node jd_city.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_TT }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+
+
+      - name: '运行FF 【城城领现金】'
+        run: |
+          cd ~/scripts
+          node jd_city.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_FF }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
