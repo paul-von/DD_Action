@@ -115,7 +115,7 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
           JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
-          
+
       - name: '运行ZQ 【城城领现金】'
         run: |
           cd ~/scripts
@@ -188,25 +188,6 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
           JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
-
-      - name: '运行TT 【城城领现金】'
-        run: |
-          cd ~/scripts
-          node jd_city.js
-        env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_TT }}
-          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
-          JD_DEBUG: ${{ secrets.JD_DEBUG }}
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          BARK_SOUND: ${{ secrets.BARK_SOUND }}
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
-
 
       - name: '运行FF 【城城领现金】'
         run: |
