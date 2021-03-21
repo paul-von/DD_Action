@@ -1,6 +1,6 @@
 
 
-name: speed_sign 京东极速版签到+赚现金任务
+name: speed_sign WZ
 on:
   workflow_dispatch:
   schedule:
