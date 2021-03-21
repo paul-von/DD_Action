@@ -1,10 +1,10 @@
 
 
-name: speed_sign ZL
+name: speed_sign ZL京东极速版签到+赚现金任务
 on:
   workflow_dispatch:
   schedule:
-      - cron: "10 16-23,0-15/7 * * *"
+      - cron: "10 16,23,5 * * *"
   watch:
       types: [started]
   repository_dispatch:
