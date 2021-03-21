@@ -32,6 +32,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -48,6 +49,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -66,6 +68,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
+          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKn5T1EHTpJePucqFbmkrySQLXdOR-jCayfLe-r_PejTtA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
