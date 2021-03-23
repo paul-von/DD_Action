@@ -32,7 +32,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}
-          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg'
+          CITY_SHARECODES: 'RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -50,7 +50,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_BA }}
-          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg'
+          CITY_SHARECODES: 'RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -68,7 +68,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_MA }}
-          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg'
+          CITY_SHARECODES: 'RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -86,7 +86,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
-          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg'
+          CITY_SHARECODES: 'RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -122,7 +122,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZQ }}
-          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg'
+          CITY_SHARECODES: 'RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -140,7 +140,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_AiE }}
-          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg'
+          CITY_SHARECODES: 'RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -159,7 +159,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}
-          CITY_SHARECODES: 'HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg'
+          CITY_SHARECODES: 'RtGKzez3RlmkfIefRoUzgg0HSKHMENitndijxJ2GbJ1WgS7nCg@RtGKze3ySV_weouaHoczgEkiW_hnK3VCgp_3RcGsqpxwCRaw5A@RtGKorPfGX3gJ-XHdLVBmtL3M25P_5bD2dGlqD-JGXb2_QVR@RtGKz-qsE17yf4SfQ9I6gLmcSjSe56J97nABs3PyqnjLeVWE7A@HY3myeqiSAyieob1V5h_msZl8lTMJ9aE0prrBiBL0aP2cA'
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
