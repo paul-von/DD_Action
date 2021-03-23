@@ -6,7 +6,7 @@ name: nzmh 女装盲盒
 on:
   workflow_dispatch:
   schedule:
-    - cron: "13 4,17 8-20 3 *"
+    - cron: "13 4,17 * 3 *"
   watch:
     types: started
   repository_dispatch:
