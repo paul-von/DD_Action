@@ -5,7 +5,7 @@ name: jd_carnivalcity 京东手机狂欢城活动
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16-10/6 * * *'
+    - cron: '0 0-18/6 * * *'
   watch:
     types: started
   repository_dispatch:
