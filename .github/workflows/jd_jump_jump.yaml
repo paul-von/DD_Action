@@ -1,6 +1,6 @@
 
 
-name: jd_mother_jump 母婴-跳一跳
+name: jd_jump_jump 母婴-跳一跳
 on:
   workflow_dispatch:
   schedule:
@@ -8,7 +8,7 @@ on:
   watch:
       types: [started]
   repository_dispatch:
-      types: jd_mother_jump
+      types: jd_jump_jump
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
       - name: '运行zZ 【母婴-跳一跳】'
         run: |
           cd ~/scripts
-          node jd_mother_jump.js
+          node jd_jump_jump.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -45,7 +45,7 @@ jobs:
       - name: '运行wz 【母婴-跳一跳】'
         run: |
           cd ~/scripts
-          node jd_mother_jump.js
+          node jd_jump_jump.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -63,7 +63,7 @@ jobs:
       - name: '运行zl 【母婴-跳一跳】'
         run: |
           cd ~/scripts
-          node jd_mother_jump.js
+          node jd_jump_jump.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
