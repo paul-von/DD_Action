@@ -5,7 +5,7 @@ name: club_lottery 摇京豆
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 */12 * * *'
+    - cron: '30 18,10 * * *'
   watch:
     types: started
   repository_dispatch:
