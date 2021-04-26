@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: jd_jin_tie 领金贴
+name: jd_jintie 领金贴
 on:
   workflow_dispatch:
   schedule:
@@ -9,7 +9,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: jd_jin_tie
+    types: jd_jintie
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,7 +30,7 @@ jobs:
       - name: '运行zZ 【领金贴】'
         run: |
           cd ~/scripts
-          node jd_jin_tie.js
+          node jd_jintie.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -46,7 +46,7 @@ jobs:
       - name: "运行wz【领金贴】"
         run: |
           cd ~/scripts
-          node jd_jin_tie.js
+          node jd_jintie.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -62,7 +62,7 @@ jobs:
       - name: "运行zl【领金贴】"
         run: |
           cd ~/scripts
-          node jd_jin_tie.js
+          node jd_jintie.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
