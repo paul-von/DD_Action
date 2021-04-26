@@ -1,32 +1,37 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
+name: jd_health JD健康
 
-name: jd_health 东东健康社区
 on:
-  workflow_dispatch:
-  schedule:
-      - cron: "10 0-23/4 * * *"
-  watch:
-      types: [started]
-  repository_dispatch:
-      types: jd_health
+    workflow_dispatch:
+    schedule:
+        - cron: "0 6,15,20 * * *"
+    watch:
+        types: [started]
+    repository_dispatch:
+        types: jd_health
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-    steps:
+    build:
+      runs-on: ubuntu-latest
+      if: github.event.repository.owner.id == github.event.sender.id
+      steps:
       - name: Checkout
         run: |
           ${{ secrets.JD_HTTPS }}
-      - name: Use Node.js 10.x
+          
+      - name: Use Node.js 15.x
         uses: actions/setup-node@v1
         with:
-          node-version: 11.x
+            node-version: 15.x
+            
       - name: npm install
         run: |
           cd ~/scripts
           npm install
-
-      - name: '运行zZ 【东东健康社区】'
+            
+      - name: '运行zZ 【JD健康】'
         run: |
           cd ~/scripts
           node jd_health.js
@@ -42,7 +47,7 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
 
-      - name: "运行wz【东东健康社区】"
+      - name: "运行wz【JD健康】"
         run: |
           cd ~/scripts
           node jd_health.js
@@ -58,7 +63,7 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
 
-      - name: "运行zl【东东健康社区】"
+      - name: "运行zl【JD健康】"
         run: |
           cd ~/scripts
           node jd_health.js
