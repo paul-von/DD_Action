@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-      ISWATER: false
+      ISWATER: true
       RETAIN_NUM: 16220
-      ISDEL: false
+      ISDEL: true
       DEL_CODE: 'b0f5d0c06eb74dc39d62b336264df3fe'
     steps:
       - name: Checkout
