@@ -31,6 +31,6 @@ jobs:
       - name: '运行 【test】'
         run: |
           cd ~/scripts
-          node jd_bean_sign.js
+          node jd_fruit.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZLXH }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
