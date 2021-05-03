@@ -14,7 +14,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
       ISWATER: true
-      RETAIN_NUM: 16220
+      RETAIN_NUM: 16010
       ISDEL: true
       DEL_CODE: 'b0f5d0c06eb74dc39d62b336264df3fe'
     steps:
@@ -37,8 +37,8 @@ jobs:
           node jd_fruit_num.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
-          FRUIT_ISWATER: env.ISWATER
-          FRUIT_RETAIN_NUM: env.RETAIN_NUM
+          FRUIT_ISWATER: ${{ env.ISWATER }}
+          FRUIT_RETAIN_NUM: ${{ env.RETAIN_NUM }}
 
       - name: '运行DEL 【东东农场】'
         if: env.ISDEL == 'true'
@@ -47,5 +47,5 @@ jobs:
           node jd_fruit_num.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
-          FRUIT_ISDEL: env.ISDEL
-          FRUIT_DEL_CODE: env.DEL_CODE
+          FRUIT_ISDEL: ${{ env.ISDEL }}
+          FRUIT_DEL_CODE: ${{ env.DEL_CODE }}
