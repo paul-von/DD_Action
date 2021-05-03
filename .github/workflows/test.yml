@@ -33,4 +33,4 @@ jobs:
           cd ~/scripts
           node jd_fruit.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_BA }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}&${{ secrets.JD_COOKIE_BA }}
