@@ -1,0 +1,51 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: fruit_num 东东农场
+on:
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: fruit
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    env:
+      ISWATER: false
+      RETAIN_NUM: 16220
+      ISDEL: false
+      DEL_CODE: 'b0f5d0c06eb74dc39d62b336264df3fe'
+    steps:
+      - name: Checkout
+        run: |
+          ${{ secrets.JD_HTTPS }}
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - name: npm install
+        run: |
+          cd ~/scripts
+          npm install
+             
+      - name: '运行NUM 【东东农场】'
+        if: env.ISWATER == 'true'
+        run: |
+          cd ~/scripts
+          node jd_fruit_num.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
+          FRUIT_ISWATER: env.ISWATER
+          FRUIT_RETAIN_NUM: env.RETAIN_NUM
+
+      - name: '运行DEL 【东东农场】'
+        if: env.ISDEL == 'true'
+        run: |
+          cd ~/scripts
+          node jd_fruit_num.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
+          FRUIT_ISDEL: env.ISDEL
+          FRUIT_DEL_CODE: env.DEL_CODE
