@@ -14,9 +14,9 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
       ISWATER: true
-      RETAIN_NUM: 16010
-      ISDEL: true
-      DEL_CODE: 'b0f5d0c06eb74dc39d62b336264df3fe'
+      RETAIN_NUM: 15800
+      ISDEL: false
+      DEL_CODE:
     steps:
       - name: Checkout
         run: |
