@@ -36,7 +36,7 @@ jobs:
           cd ~/scripts
           node jd_fruit_num.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}
           FRUIT_ISWATER: ${{ env.ISWATER }}
           FRUIT_RETAIN_NUM: ${{ env.RETAIN_NUM }}
 
