@@ -47,7 +47,7 @@ jobs:
           cd ~/scripts
           node jd_redPacket.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}&${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_TT }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_DD }}&${{ secrets.JD_COOKIE_WZ }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -63,7 +63,7 @@ jobs:
           cd ~/scripts
           node jd_redPacket.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_FF }}&${{ secrets.JD_COOKIE_TT }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
