@@ -13,8 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
+      # 继续浇水，设定剩余水滴数
       ISWATER: true
       RETAIN_NUM: 15800
+      # 浇至直接兑换，条件：当剩余水滴数 大于 所差的水滴数
+      ISMaxWATER: false
       # 删除好友
       ISDEL: false
       DEL_CODE:
@@ -40,6 +43,7 @@ jobs:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}
           FRUIT_ISWATER: ${{ env.ISWATER }}
           FRUIT_RETAIN_NUM: ${{ env.RETAIN_NUM }}
+          FRUIT_ISMaxWATER: ${{ env.RETAIN_ISMaxWATER }}
 
       - name: '运行删除好友 【东东农场】'
         if: env.ISDEL == 'true'
