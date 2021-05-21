@@ -1,6 +1,6 @@
 
 
-name: jd_daily_lottery 每日抽奖
+name: jd_daily_lottery 小鸽有礼-小鸽有礼-每日抽奖
 on:
   workflow_dispatch:
   schedule:
@@ -26,7 +26,7 @@ jobs:
           cd ~/scripts
           npm install
 
-      - name: '运行zZ 【每日抽奖】'
+      - name: '运行zZ 【小鸽有礼-每日抽奖】'
         run: |
           cd ~/scripts
           node jd_daily_lottery.js
