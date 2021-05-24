@@ -37,6 +37,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
+          JD_CITY_EXCHANGE: true
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -53,6 +54,7 @@ jobs:
           node jd_city.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
+          JD_CITY_EXCHANGE: true
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -68,7 +70,8 @@ jobs:
           cd ~/scripts
           node jd_city.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZX }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_ZL }}&${{ secrets.JD_COOKIE_ZQ }}&${{ secrets.JD_COOKIE_AiE }}
+          JD_CITY_EXCHANGE: true
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
