@@ -31,7 +31,7 @@ jobs:
           cd ~/scripts
           node jd_ms.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_ZZ }}&${{ secrets.JD_COOKIE_MA }}&${{ secrets.JD_COOKIE_BA }}&${{ secrets.JD_COOKIE_DD }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}

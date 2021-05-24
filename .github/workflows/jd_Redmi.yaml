@@ -52,7 +52,7 @@ jobs:
           cd ~/scripts
           node jd_Redmi.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_FF }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE_WZ }}&${{ secrets.JD_COOKIE_WM }}&${{ secrets.JD_COOKIE_TT }}&${{ secrets.JD_COOKIE_FF }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
